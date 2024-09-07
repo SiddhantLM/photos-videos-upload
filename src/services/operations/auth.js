@@ -13,9 +13,6 @@ export const sendOtp = (email, navigate) => {
         { email: email },
         { headers: { "Content-Type": "application/json" } }
       );
-
-      console.log("otp sent : ", response);
-
       if (response.data.success) {
         console.log("success");
         navigate("/verify-email");
@@ -63,6 +60,8 @@ export const login = (email, password, navigate) => {
     dispatch(setLoading(true));
 
     try {
+      console.log("REACT_APP_BASE_URL:", process.env.PUBLIC_URL);
+
       const response = await axios.post(endpoints.LOGIN_API, {
         email: email,
         password: password,
