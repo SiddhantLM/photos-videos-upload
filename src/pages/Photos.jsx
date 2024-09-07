@@ -47,7 +47,7 @@ const Photos = () => {
         </div>
       ) : (
         <>
-          <div className=" text-center mx-auto text-2xl mt-[2rem] mb-[1.5rem] text-[#388087] font-bold">
+          <div className=" text-center mx-auto text-2xl mt-[60px] md:mt-[2rem] mb-[1.5rem] text-[#388087] font-bold">
             Welcome {user.user.name} to your Photo gallery{" "}
           </div>
 

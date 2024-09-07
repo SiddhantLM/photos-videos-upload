@@ -47,7 +47,7 @@ const Photos = () => {
         </div>
       ) : (
         <>
-          <div className=" text-center mx-auto text-2xl mb-[1rem] mt-[2rem] text-[#388087] font-bold">
+          <div className=" text-center mx-auto text-2xl mb-[1rem] mt-[64px] md:mt-[2rem] text-[#388087] font-bold">
             Welcome to your video gallery{" "}
           </div>
 
