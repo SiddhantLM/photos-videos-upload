@@ -30,6 +30,10 @@ const Photos = () => {
     dispatch(uploadImages(user.email, files, token));
   };
 
+  useEffect(() => {
+    setImages(user.user.Images);
+  }, [user]);
+
   const handleOnDelete = (id) => {
     dispatch(deleteImage(user.user.email, id, token));
     setImages(user.user.Images);
